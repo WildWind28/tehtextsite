@@ -1,15 +1,61 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    {% load static %}
     <meta charset="UTF-8">
-    <title>ТехТекст — Визитка копирайтера</title>
+    <title>ТехТекст</title>
     <link rel="stylesheet" href="{% static 'main/style.css' %}">
 </head>
 <body>
-    <header>
-        <h1>ТЕХТЕКСТ</h1>
-        <p>Технический копирайтинг для бизнеса</p>
+    <!-- Шапка с логотипом и слоганом -->
+    <header class="header">
+        <img src="{% static 'main/img/logo.jpg' %}" alt="Логотип" class="logo">
+        <div class="header-text">
+            <h1>ТЕХТЕКСТ</h1>
+            <p class="subtitle">Контент для технических и B2B проектов</p>
+        </div>
     </header>
+    <!-- Меню контактов -->
+    <nav class="contacts">
+        <a href="mailto:вашemail@mail.ru" class="contact-link">E-mail</a>
+        <a href="https://t.me/ваштелеграм" class="contact-link">Telegram</a>
+        <a href="#" class="contact-link">Другой канал</a>
+    </nav>
+    <!-- Блок О себе -->
+    <section class="about">
+        <h2>О себе</h2>
+        <p>
+           Копирайтер, контент-менеджер. Работаю с техническими темами и B2B-направлением.<br>
+           Опыт написания экспертных статей, лендингов, email-рассылок, постов в мессенджерах.
+        </p>
+    </section>
+    <!-- Блок Услуги -->
+    <section class="services">
+        <h2>Что делаю</h2>
+        <ul>
+            <li>Экспертные статьи</li>
+            <li>Менеджмент контента и редактура</li>
+            <li>Автоматизация публикаций</li>
+            <li>Тексты для лендингов</li>
+        </ul>
+    </section>
+    <!-- Блок Портфолио -->
+    <section class="portfolio">
+        <h2>Примеры работ</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <div class="image-placeholder">img1.jpg</div>
+                <div class="desc">Заготовка для примера #1</div>
+            </div>
+            <div class="portfolio-item">
+                <div class="image-placeholder">img2.jpg</div>
+                <div class="desc">Заготовка для примера #2</div>
+            </div>
+        </div>
+    </section>
+    <!-- Футер -->
+    <footer class="footer">
+        <p>© 2025 ТехТекст. Все права защищены.</p>
+    </footer>
 </body>
 </html>
